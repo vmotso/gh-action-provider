@@ -4,8 +4,12 @@ inputs:
   command:
     description: "command"
     required: true
+  arg:
+    description: "arg"
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
     - ${{ inputs.command }}
+    - ${{ inputs.arg }}
