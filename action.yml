@@ -1,9 +1,6 @@
 name: "provider"
 description: "provider"
 inputs:
-  make:
-    description: "make"
-    required: true
   command:
     description: "command"
     required: true
@@ -11,5 +8,4 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.make }}
     - ${{ inputs.command }}

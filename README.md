@@ -4,6 +4,5 @@
 ```yaml
 uses: vmotso/gh-action-provider@master
 with:
-    make: make
     command: test
 ```
